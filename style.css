@@ -1,3 +1,143 @@
+body {
+    background-color: #FAEED1
+}
+
+.stalinist-one-regular {
+    font-family: "Stalinist One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+/* Game Title */
+
+#game-title {
+    color: #FAEED1;
+    font-family: "Stalinist One", sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Main Container */
+
+#main-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Player Details */
+
+#player {
+    background-color: #5F8670;
+    border: 8px solid #FF9800;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 20px;
+    width: 550px;
+}
+
+#player-type {
+    color: #FAEED1;
+    font-family: "Stalinist One", sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Grid */
+
+#grid {
+    background-color: #FF9800;
+    border: 3.5px #5F8670;
+    border-radius: 8px;
+    box-shadow: 2px 3px 7px #000000;
+    margin-top: 50px;
+    max-width: 600px;
+    padding: 3px;
+}
+
+/* Grid Row */
+
+.row {
+    display: flex;
+}
+
+/* Grid Column */
+
+.column {
+    align-items: center;
+    background-color: #FAEED1;
+    border: 1px solid  #5F8670;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    margin: 5px;
+    width:  75px;
+}
+
+/* Buttons */
+
+.button {
+    background-color: #ffffff;
+    border: none;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #FAEED1;
+    color: #000000;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+#reset-button {
+    background-color: #5F8670;
+    border: 2px solid #FF9800;
+    border-radius: 5px;
+    color: #FAEED1;
+    font-family: "Stalinist One", sans-serif;
+    font-size: 1.5rem;
+    margin: 50px 0;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: 5s;
+}
+
+#reset-button:hover {
+    background-color: #EE99C2;
+    color: #3876BF;
+    cursor: pointer;
+    transition: 5s;
+}
+
+/* Player - 1 Buttons */
+
+.button-player-1 {
+    background-color: #3876BF;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    color: #3876BF;
+    height:  50px;
+    width: 50px;
+}
+
+/* Player - 2 Buttons */
+
+.button-player-2 {
+    background-color: #EE99C2;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    color: #EE99C2;
+    height:  50px;
+    width: 50px;
+}
+
 
 
 
