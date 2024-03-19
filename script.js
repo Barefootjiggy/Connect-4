@@ -35,3 +35,5 @@
 // Implement styling and animations to enhance the user experience
 
 // Deployment
+
+// DOM Variables

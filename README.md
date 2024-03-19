@@ -1,7 +1,7 @@
 # Connect4
 Title/Description of game:
 
-Connect 4/C4
+Connect 4
 
 A game where each player gets a finite amount of pieces that together equal the amount of cells in the game board, winner is determined by the first person to get 4 pieces in a row, vertically or diagonally and players alternate turns. I chose this game because I used to play connect 4 a lot and it'll be cool to have my own version of it and update it as I go a long
 
