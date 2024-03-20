@@ -40,23 +40,24 @@
 
 // DOM Variables
 
-var buttons = document.getElementsByClassName("button");
-var reset = document.getElementById("reset-button");
-var playerType = document.getElementById("player-type");
-
+const buttons = document.getElementsByClassName("button");
+const reset = document.getElementById("reset-button");
+const playerType = document.getElementById("player-type");
+const gameConclusion = document.getElementById("game-conclusion");
+const winner = document.getElementById("winner");
 
 
 // Game Flow Variables
 
-var playerNumber = 1; // Initially player - 1 gets to start his/her turn
+let playerNumber = 1; // Initially player - 1 gets to start his/her turn
 
-var filledGrid = []; // Player board
+let filledGrid = []; // Player board
 
-var filledCells = 0; // No. of cells that has been filled
+let filledCells = 0; // No. of cells that has been filled
 
-for(var i = 0; i < 6; i++) {
+for(let i = 0; i < 6; i++) {
 
-  var arr = [-1 , -1 , -1 , -1 , -1 , -1 , -1]; // Board is initialised with -1
+  let arr = [-1 , -1 , -1 , -1 , -1 , -1 , -1]; // Board is initialised with -1
   filledGrid.push(arr);
 
 }
@@ -68,7 +69,7 @@ reset.addEventListener("click" , function() {
 
 });
 
-for(var i = 0; i < buttons.length; i++) {
+for(let i = 0; i < buttons.length; i++) {
 
   // Handing the Event when button was clicked
 
@@ -76,91 +77,70 @@ for(var i = 0; i < buttons.length; i++) {
 
     // Make move and disable the button to avoid further clicking it again
 
-    var buttonNo = this.classList[1];
+    let buttonNo = this.classList[1];
     makeMove(this , buttonNo.slice(4));
 
   });
 }
 
-// Function to display winner message
-function displayWinner(player) {
-  const gameConclusion = document.getElementById("game-conclusion");
-  const winner = document.getElementById("winner");
-  winner.textContent = player;
-  winnerMessage.classList.remove("hide");
-}
-
 // Function to reset the board and hide the winner message
 function resetBoard() {
-  // Reset the board logic here
-  const gameConclusion = document.getElementById("game-conclusion");
-  winnerMessage.classList.add("hide");
+ gameConclusion.classList.add("hide");
+}
+
+// Function to display winner message
+function displayWinner(player) {
+  winner.textContent = player;
+  gameConclusion.classList.remove("hide"); // 
 }
 
 // Function to Make Move on the passed button and disable it
-function makeMove(button , buttonNo) {
 
-  var row = buttonNo % 7 === 0 ? Math.floor(buttonNo / 7) - 1 : Math.floor(buttonNo / 7);
-  var column = buttonNo % 7 === 0 ? 6: (buttonNo % 7) - 1;
+function makeMove(button, buttonNo) {
+  let row = buttonNo % 7 === 0 ? Math.floor(buttonNo / 7) - 1 : Math.floor(buttonNo / 7);
+  let column = buttonNo % 7 === 0 ? 6 : (buttonNo % 7) - 1;
 
-  if(playerNumber === 1) {
+  if (playerNumber === 1) {
+      button.classList.add("button-player-1");
+      filledGrid[row][column] = 1;
+      filledCells++;
 
-    button.classList.add("button-player-1");
+      if (playerWon(row, column, 1)) {
+          displayWinner("Player 1");
+          resetBoard();
+      }
 
-
-    filledGrid[row][column] = 1;
-    filledCells++;
-
-
-    if (playerWon(row, column, 1)) {
-      displayWinner("Player 1");
-      resetBoard();
-    }
-
-    // Update the player
-    playerNumber = 2;
-    playerType.textContent = "Player - 2";
-
+      // Update the player
+      playerNumber = 2;
+      playerType.textContent = "Player - 2";
   } else {
+      button.classList.add("button-player-2");
+      filledGrid[row][column] = 2;
+      filledCells++;
 
-    button.classList.add("button-player-2");
+      if (playerWon(row, column, 2)) {
+          displayWinner("Player 2");
+          resetBoard();
+      }
 
-
-    filledGrid[row][column] = 2;
-    filledCells++;
-
-    if (playerWon(row, column, 1)) {
-      displayWinner("Player 2");
-      resetBoard();
-    }
-
-    // Update the player
-    playerNumber = 1;
-    playerType.textContent = "Player - 1";
-
+      // Update the player
+      playerNumber = 1;
+      playerType.textContent = "Player - 1";
   }
 
-  // If all the cells has been filled
-
-  if(filledCells === 42) {
-    displayWinner("Tie");
+  // If all the cells have been filled
+  if (filledCells === 42) {
+      displayWinner("Tie");
       resetBoard();
   }
+  
+  function playerWon(row , column , player) {
 
-  // Disable the button is the move is made
-  setTimeout(function () {
-    button.disabled = true;
-  },10);
-
-}
-
-function playerWon(row , column , player) {
-
-  var count = 0;
+  let count = 0;
 
   // Check for columns
 
-  for(var i = 0; i < 7; i++) {
+  for(let i = 0; i < 7; i++) {
     if(filledGrid[row][i] === player) {
       count++;
       if(count === 4) return true;
@@ -174,7 +154,7 @@ function playerWon(row , column , player) {
 
   // Check for Rows
 
-  for(var i = 0; i < 6; i++) {
+  for(let i = 0; i < 6; i++) {
     if(filledGrid[i][column] === player) {
       count++;
       if(count === 4) return true;
@@ -190,8 +170,8 @@ function playerWon(row , column , player) {
 
   if(row >= column) {
 
-    var i = row - column;
-    var j = 0;
+    let i = row - column;
+    let j = 0;
 
     for(; i <= 5; i++ , j++) {
       if(filledGrid[i][j] === player) {
@@ -203,8 +183,8 @@ function playerWon(row , column , player) {
     }
   } else {
 
-    var i = 0;
-    var j = column - row;
+    let i = 0;
+    let j = column - row;
 
     for(; j <= 6; i++ , j++) {
       if(filledGrid[i][j] === player) {
@@ -223,8 +203,8 @@ function playerWon(row , column , player) {
 
   if(row + column <= 5) {
 
-    var i = row + column;
-    var j = 0;
+    let i = row + column;
+    let j = 0;
 
     for(; i >= 0 && j <= row + column; i-- , j++) {
       if(filledGrid[i][j] === player) {
@@ -237,8 +217,8 @@ function playerWon(row , column , player) {
 
   } else {
 
-    var i = 5;
-    var j = row + column - 5;
+    let i = 5;
+    let j = row + column - 5;
 
     for(; j <= 6; j++ , i--) {
       if(filledGrid[i][j] === player) {
@@ -259,7 +239,7 @@ function resetBoard() {
 
   // Remove all the disabled buttons and the styles
 
-  for(var i = 0; i < buttons.length; i++) {
+  for(let i = 0; i < buttons.length; i++) {
     buttons[i].disabled = false;
     buttons[i].classList.remove("button-player-1");
     buttons[i].classList.remove("button-player-2");
@@ -279,10 +259,10 @@ function resetBoard() {
 
   // Filling the Board with -1
 
-  for(var i = 0; i < 6; i++) {
-    for(var j = 0; j < 7; j++) {
+  for(let i = 0; i < 6; i++) {
+    for(let j = 0; j < 7; j++) {
       filledGrid[i][j] = -1;
     }
   }
 
-}
+}}
