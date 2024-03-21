@@ -45,6 +45,21 @@ const reset = document.getElementById("reset-button");
 const playerType = document.getElementById("player-type");
 const gameConclusion = document.getElementById("game-conclusion");
 const winner = document.getElementById("winner");
+// Get the color scheme select element
+const colorSchemeSelect = document.getElementById('color-scheme-select');
+
+// Add event listener to handle color scheme change
+colorSchemeSelect.addEventListener('change', function() {
+  // Get the selected color scheme value
+  const selectedColorScheme = colorSchemeSelect.value;
+  
+  // Remove existing color scheme classes from body
+  document.body.classList.remove('classic', 'dark-mode', 'light-mode');
+  
+  // Add the selected color scheme class to body
+  document.body.classList.add(selectedColorScheme);
+});
+
 
 
 // Game Flow Variables
@@ -130,7 +145,7 @@ function makeMove(button, buttonNo) {
 
   // If all the cells have been filled
   if (filledCells === 42) {
-      displayWinner("Tie");
+      displayWinner("Connect 4");
       resetBoard();
   }
   
