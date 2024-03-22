@@ -1,5 +1,155 @@
-body {
-    background-color: #000000;
+.classic {
+       
+    /* Game Title */
+    
+    #game-title {
+        color: #ffffff;
+        font-family: "Londrina Solid", sans-serif;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+       
+    /* Main Container */
+    
+    #main-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    /* Add these styles to style the announcement */
+    #game-conclusion {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #0271b8;
+        color: #ffffff;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: "Londrina Solid", sans-serif;
+        font-size: 24px;
+        z-index: 9999;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    
+    /* Player Details */
+    
+    #player {
+        background-color: #0271b8;
+        border: 4px solid #ffffff;
+        box-shadow: 2px 3px 5px 7px #EEEEEE;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 20px;
+        width: 350px;
+    }
+    
+    #player-type {
+        color: #ffffff;
+        font-family: "Londrina Solid", sans-serif;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    /* Grid */
+    
+    #grid {
+        background-color: #fbde0c;
+        border: 3.5px #fbde0c;
+        border-radius: 4px;
+        box-shadow: 2px 3px 5px 7px #0271b8;
+        margin-top: 50px;
+        max-width: 600px;
+        padding: 7px;
+    }
+    
+    /* Grid Row */
+    
+    .row {
+        display: flex;
+    }
+    
+    /* Grid Column */
+    
+    .column {
+        align-items: center;
+        background-color: #fbde0c;
+        border: 1px solid  #ce970c;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        margin: 5px;
+        width:  75px;
+    }
+    
+    /* Buttons */
+    
+    .button {
+        background-color: #ffffff;
+        border: none;
+        height: 100%;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .button:hover {
+        background-color: #fbde0c;
+        color: #ce970c;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    
+    #reset-button {
+        background-color: #ffffff;
+        border: 2px solid #ffffff;
+        border-radius: 5px;
+        color: #0271b8;
+        font-family: "Londrina Solid", sans-serif;
+        font-size: 1.5rem;
+        margin: 50px 0;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        transition: 1.5s;
+    }
+    
+    #reset-button:hover {
+        background-color: #0271b8;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    
+    /* Player - 1 Buttons */
+    
+    .button-player-1 {
+        background-color: #000000;
+        border: 2px solid #1c1d1e;
+        border-radius: 50%;
+        color: #000000;
+        height:  50px;
+        width: 50px;
+    }
+    
+    /* Player - 2 Buttons */
+    
+    .button-player-2 {
+        background-color: #fa4846;
+        border: 2px solid #fa4846;
+        border-radius: 50%;
+        color: #EEEEEE;
+        height:  50px;
+        width: 50px;
+    }
 }
 
 .after-hours {
@@ -161,7 +311,7 @@ body {
 /* Game Title */
 
 #game-title {
-    color: #ffffff;
+    color: #fefefe;
     font-family: "Press Start 2P", system-ui;
     letter-spacing: 5px;
     text-align: center;
@@ -184,7 +334,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: #000000;
+    background-color: #030303;
     color: #f2ad4a;
     padding: 20px;
     border-radius: 10px;
@@ -200,9 +350,9 @@ body {
 /* Player Details */
 
 #player {
-    background-color: #000000;
-    border: 4px solid #1919A6;
-    box-shadow: 2px 3px 5px 7px #1919A6;
+    background-color: #030303;
+    border: 4px solid #102ad8;
+    box-shadow: 2px 3px 5px 7px #102ad8;
     border-radius: 10px;
     margin-top: 50px;
     padding: 20px;
@@ -210,7 +360,7 @@ body {
 }
 
 #player-type {
-    color: #FFFF00;
+    color: #fffd5c;
     font-family: "Press Start 2P", system-ui;
     letter-spacing: 5px;
     text-align: center;
@@ -220,10 +370,10 @@ body {
 /* Grid */
 
 #grid {
-    background-color: #000000;
-    border: 3.5px #1919A6;
+    background-color: #030303;
+    border: 3.5px #102ad8;
     border-radius: 4px;
-    box-shadow: 2px 3px 5px 7px #1919A6;
+    box-shadow: 2px 3px 5px 7px #102ad8;
     margin-top: 50px;
     max-width: 600px;
     padding: 7px;
@@ -239,8 +389,8 @@ body {
 
 .column {
     align-items: center;
-    background-color: #1919A6;
-    border: 1px solid  #ffffff;
+    background-color: #102ad8;
+    border: 1px solid  #fefefe;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -252,7 +402,7 @@ body {
 /* Buttons */
 
 .button {
-    background-color: #000000;
+    background-color: #030303;
     border: none;
     height: 100%;
     padding: 0;
@@ -261,16 +411,16 @@ body {
 
 .button:hover {
     background-color: #f9a6db;
-    color: #ffffff;
+    color: #fefefe;
     cursor: pointer;
     transition: 1.5s;
 }
 
 #reset-button {
-    background-color: #000000;
-    border: 2px solid #1919A6;
+    background-color: #030303;
+    border: 2px solid #102ad8;
     border-radius: 5px;
-    color: #ffffff;
+    color: #fefefe;
     font-family: "Press Start 2P", system-ui;
     font-size: 1.5rem;
     margin: 50px 0;
@@ -280,7 +430,7 @@ body {
 }
 
 #reset-button:hover {
-    background-color: #000000;
+    background-color: #030303;
     color: #f2ad4a;
     cursor: pointer;
     transition: 1.5s;
@@ -303,7 +453,7 @@ body {
     background-color: #00ffcc;
     border: 2px solid #00ffcc;
     border-radius: 50%;
-    color: #EEEEEE;
+    color: #fefefe;
     height:  50px;
     width: 50px;
 }
@@ -314,7 +464,7 @@ body {
     /* Game Title */
     
     #game-title {
-        color: #DF2E38;
+        color: #eb2221;
         font-family: "Cherry Bomb One", system-ui;
         letter-spacing: 5px;
         text-align: center;
@@ -337,8 +487,8 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #ffffff;
-        color: #ff0000;
+        background-color: #f9f9fb;
+        color: #eb2221;
         padding: 20px;
         border-radius: 10px;
         font-size: 24px;
@@ -353,9 +503,9 @@ body {
     /* Player Details */
     
     #player {
-        background-color: #ffffff;
-        border: 4px solid #0081C9;
-        box-shadow: 2px 3px 5px 7px #EEEEEE;
+        background-color: #f9f9fb;
+        border: 4px solid #0b89ba;
+        box-shadow: 2px 3px 5px 7px #e5e5e2;
         border-radius: 10px;
         margin-top: 50px;
         padding: 20px;
@@ -363,7 +513,7 @@ body {
     }
     
     #player-type {
-        color: #0081C9;
+        color: #0b89ba;
         font-family: "Cherry Bomb One", system-ui;
         letter-spacing: 5px;
         text-align: center;
@@ -373,10 +523,10 @@ body {
     /* Grid */
     
     #grid {
-        background-color: #ffffff;
-        border: 3.5px #ffffff;
+        background-color: #f9f9fb;
+        border: 3.5px #f9f9fb;
         border-radius: 4px;
-        box-shadow: 2px 3px 5px 7px #0081C9;
+        box-shadow: 2px 3px 5px 7px #0b89ba;
         margin-top: 50px;
         max-width: 600px;
         padding: 7px;
@@ -392,8 +542,8 @@ body {
     
     .column {
         align-items: center;
-        background-color: #ffffff;
-        border: 1px solid  #ffffff;
+        background-color: #f9f9fb;
+        border: 1px solid  #f9f9fb;
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -405,7 +555,7 @@ body {
     /* Buttons */
     
     .button {
-        background-color: #EEEEEE;
+        background-color: #e5e5e2;
         border: none;
         height: 100%;
         padding: 0;
@@ -413,17 +563,17 @@ body {
     }
     
     .button:hover {
-        background-color: #ffffff;
-        color: #ffffff;
+        background-color: #f9f9fb;
+        color: #f9f9fb;
         cursor: pointer;
         transition: 1.5s;
     }
     
     #reset-button {
-        background-color: #ffffff;
-        border: 2px solid #0081C9;
+        background-color: #f9f9fb;
+        border: 2px solid #0b89ba;
         border-radius: 5px;
-        color: #ff0000;
+        color: #eb2221;
         font-family: "Cherry Bomb One", system-ui;
         font-size: 1.5rem;
         margin: 50px 0;
@@ -433,7 +583,7 @@ body {
     }
     
     #reset-button:hover {
-        background-color: #ffffff;
+        background-color: #f9f9fb;
         color: #0081C9;
         cursor: pointer;
         transition: 1.5s;
@@ -442,8 +592,8 @@ body {
     /* Player - 1 Buttons */
     
     .button-player-1 {
-        background-color: #DF2E38;
-        border: 2px solid #ffffff;
+        background-color: #eb2221;
+        border: 2px solid #f9f9fb;
         border-radius: 50%;
         color: #0081C9;
         height:  50px;
@@ -453,10 +603,10 @@ body {
     /* Player - 2 Buttons */
     
     .button-player-2 {
-        background-color: #0081C9;
-        border: 2px solid #ffffff;
+        background-color: #0b89ba;
+        border: 2px solid #f9f9fb;
         border-radius: 50%;
-        color: #DF2E38;
+        color: #eb2221;
         height:  50px;
         width: 50px;
     }
@@ -621,7 +771,7 @@ body {
     /* Game Title */
     
     #game-title {
-        color: #f4eb3b;
+        color: #ffe724;
         font-family: "Notable", sans-serif;
         letter-spacing: 5px;
         text-align: center;
@@ -644,8 +794,8 @@ body {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        background-color: #000000;
-        color: #f4eb3b;
+        background-color: #0a0811;
+        color: #ffe724;
         padding: 20px;
         border-radius: 10px;
         font-family: "Notable", sans-serif;
@@ -661,8 +811,8 @@ body {
     /* Player Details */
     
     #player {
-        background-color: #000000;
-        border: 4px solid #f4eb3b;
+        background-color: #0a0811;
+        border: 4px solid #ffe724;
         box-shadow: 2px 3px 5px 7px #EEEEEE;
         border-radius: 10px;
         margin-top: 50px;
@@ -671,7 +821,7 @@ body {
     }
     
     #player-type {
-        color: #f4eb3b;
+        color: #ffffff;
         font-family: "Notable", sans-serif;
         letter-spacing: 5px;
         text-align: center;
@@ -681,8 +831,8 @@ body {
     /* Grid */
     
     #grid {
-        background-color: #000000;
-        border: 3.5px #f4eb3b;
+        background-color: #0a0811;
+        border: 3.5px #ffe724;
         border-radius: 4px;
         box-shadow: 2px 3px 5px 7px #EEEEEE;
         margin-top: 50px;
@@ -700,8 +850,8 @@ body {
     
     .column {
         align-items: center;
-        background-color: #f4eb3b;
-        border: 1px solid  #f4eb3b;
+        background-color: #ffe724;
+        border: 1px solid  #ffe724;
         border-radius: 5px;
         display: flex;
         justify-content: center;
@@ -721,17 +871,17 @@ body {
     }
     
     .button:hover {
-        background-color: #000000;
+        background-color: #0a0811;
         color: #EEEEEE;
         cursor: pointer;
         transition: 1.5s;
     }
     
     #reset-button {
-        background-color: #000000;
-        border: 2px solid #f4eb3b;
+        background-color: #0a0811;
+        border: 2px solid #ffe724;
         border-radius: 5px;
-        color: #e53d39;
+        color: #a9252d;
         font-family: "Notable", sans-serif;
         font-size: 1.5rem;
         margin: 50px 0;
@@ -741,8 +891,8 @@ body {
     }
     
     #reset-button:hover {
-        background-color: #000000;
-        color: #2161c7;
+        background-color: #0a0811;
+        color: #0944d0;
         cursor: pointer;
         transition: 1.5s;
     }
@@ -750,10 +900,10 @@ body {
     /* Player - 1 Buttons */
     
     .button-player-1 {
-        background-color: #e53d39;
-        border: 2px solid #000000;
+        background-color: #a9252d;
+        border: 2px solid #0a0811;
         border-radius: 50%;
-        color: #000000;
+        color: #0a0811;
         height:  50px;
         width: 50px;
     }
@@ -761,7 +911,7 @@ body {
     /* Player - 2 Buttons */
     
     .button-player-2 {
-        background-color: #2161c7;
+        background-color: #0944d0;
         border: 2px solid #EEEEEE;
         border-radius: 50%;
         color: #EEEEEE;
