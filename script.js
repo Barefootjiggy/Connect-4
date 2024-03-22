@@ -48,16 +48,24 @@ const winner = document.getElementById("winner");
 // Get the color scheme select element
 const colorSchemeSelect = document.getElementById('color-scheme-select');
 
+// Define an object to map color schemes to background colors
+const backgroundColors = {
+  'after-hours': '#000000', 'pac-man': '#000000', 'ice-pop': '#000000', 'vice-city': '#000000', 'star-wars': '#000000', 'barbie': '#000000', 'ferrari': '#000000', 'mercedes': '#000000', 'red-bull': '#000000', 'mocha': '#000000'
+}
+
 // Add event listener to handle color scheme change
 colorSchemeSelect.addEventListener('change', function() {
   // Get the selected color scheme value
   const selectedColorScheme = colorSchemeSelect.value;
   
   // Remove existing color scheme classes from body
-  document.body.classList.remove('classic', 'dark-mode', 'light-mode');
+  document.body.classList.remove('after-hours', 'pac-man', 'ice-pop', 'vice-city', 'star-wars', 'barbie', 'ferrari', 'mercedes', 'red-bull', 'mocha' );
   
   // Add the selected color scheme class to body
   document.body.classList.add(selectedColorScheme);
+
+  // Set the background color based on the selected color scheme
+  document.body.style.backgroundColor = backgroundColors[selectedColorScheme];
 });
 
 

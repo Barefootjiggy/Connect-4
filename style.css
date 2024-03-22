@@ -2,29 +2,166 @@ body {
     background-color: #000000;
 }
 
-.press-start {
-    font-family: "Press Start 2P", system-ui;
-    font-weight: 400;
-    font-style: normal;
-  }
+.after-hours {
+       
+    /* Game Title */
+    
+    #game-title {
+        color: #ff0000;
+        font-family: "Nosifer", sans-serif;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+       
+    /* Main Container */
+    
+    #main-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    /* Add these styles to style the announcement */
+    #game-conclusion {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000000;
+        color: #00FF00;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: "Nosifer", sans-serif;
+        font-size: 24px;
+        z-index: 9999;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    
+    /* Player Details */
+    
+    #player {
+        background-color: #000000;
+        border: 4px solid #ff6f00;
+        box-shadow: 2px 3px 5px 7px #EEEEEE;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 20px;
+        width: 350px;
+    }
+    
+    #player-type {
+        color: #ff6f00;
+        font-family: "Nosifer", sans-serif;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    /* Grid */
+    
+    #grid {
+        background-color: #000000;
+        border: 3.5px #ff0000;
+        border-radius: 4px;
+        box-shadow: 2px 3px 5px 7px #EEEEEE;
+        margin-top: 50px;
+        max-width: 600px;
+        padding: 7px;
+    }
+    
+    /* Grid Row */
+    
+    .row {
+        display: flex;
+    }
+    
+    /* Grid Column */
+    
+    .column {
+        align-items: center;
+        background-color: #ff0000;
+        border: 1px solid  #ff6f00;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        margin: 5px;
+        width:  75px;
+    }
+    
+    /* Buttons */
+    
+    .button {
+        background-color: #EEEEEE;
+        border: none;
+        height: 100%;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .button:hover {
+        background-color: #000000;
+        color: #EEEEEE;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    
+    #reset-button {
+        background-color: #000000;
+        border: 2px solid #ff6f00;
+        border-radius: 5px;
+        color: #ff0000;
+        font-family: "Nosifer", sans-serif;
+        font-size: 1.5rem;
+        margin: 50px 0;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        transition: 1.5s;
+    }
+    
+    #reset-button:hover {
+        background-color: #000000;
+        color: #00FF00;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    
+    /* Player - 1 Buttons */
+    
+    .button-player-1 {
+        background-color: #000000;
+        border: 2px solid #000000;
+        border-radius: 50%;
+        color: #000000;
+        height:  50px;
+        width: 50px;
+    }
+    
+    /* Player - 2 Buttons */
+    
+    .button-player-2 {
+        background-color: #EEEEEE;
+        border: 2px solid #EEEEEE;
+        border-radius: 50%;
+        color: #EEEEEE;
+        height:  50px;
+        width: 50px;
+    }
+}
 
-  .classic {
-    /* Define classic color scheme */
-    /* Example colors: */
-    --background-color: #FFFFFF;
-    --text-color: #000000;
-    --button-background: #FF0000;
-    /* Add more CSS rules for other elements */
-  }
-  
-  
-  
-  
-  
+.pac-man {
+
 /* Game Title */
 
 #game-title {
-    color: #ff0000;
+    color: #ffffff;
     font-family: "Press Start 2P", system-ui;
     letter-spacing: 5px;
     text-align: center;
@@ -48,7 +185,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #000000;
-    color: #00FF00;
+    color: #ffffff;
     padding: 20px;
     border-radius: 10px;
     font-size: 24px;
@@ -64,8 +201,8 @@ body {
 
 #player {
     background-color: #000000;
-    border: 4px solid #ff6f00;
-    box-shadow: 2px 3px 5px 7px #EEEEEE;
+    border: 4px solid #1919A6;
+    box-shadow: 2px 3px 5px 7px #1919A6;
     border-radius: 10px;
     margin-top: 50px;
     padding: 20px;
@@ -73,7 +210,7 @@ body {
 }
 
 #player-type {
-    color: #ff6f00;
+    color: #FFFF00;
     font-family: "Press Start 2P", system-ui;
     letter-spacing: 5px;
     text-align: center;
@@ -84,9 +221,9 @@ body {
 
 #grid {
     background-color: #000000;
-    border: 3.5px #ff0000;
+    border: 3.5px #1919A6;
     border-radius: 4px;
-    box-shadow: 2px 3px 5px 7px #EEEEEE;
+    box-shadow: 2px 3px 5px 7px #1919A6;
     margin-top: 50px;
     max-width: 600px;
     padding: 7px;
@@ -102,8 +239,8 @@ body {
 
 .column {
     align-items: center;
-    background-color: #ff0000;
-    border: 1px solid  #ff6f00;
+    background-color: #1919A6;
+    border: 1px solid  #ffffff;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -115,7 +252,7 @@ body {
 /* Buttons */
 
 .button {
-    background-color: #EEEEEE;
+    background-color: #000000;
     border: none;
     height: 100%;
     padding: 0;
@@ -123,17 +260,17 @@ body {
 }
 
 .button:hover {
-    background-color: #000000;
-    color: #EEEEEE;
+    background-color: #ffffff;
+    color: #000000;
     cursor: pointer;
     transition: 1.5s;
 }
 
 #reset-button {
     background-color: #000000;
-    border: 2px solid #ff6f00;
+    border: 2px solid #1919A6;
     border-radius: 5px;
-    color: #ff0000;
+    color: #ffffff;
     font-family: "Press Start 2P", system-ui;
     font-size: 1.5rem;
     margin: 50px 0;
@@ -144,7 +281,7 @@ body {
 
 #reset-button:hover {
     background-color: #000000;
-    color: #00FF00;
+    color: #FFFF00;
     cursor: pointer;
     transition: 1.5s;
 }
@@ -170,6 +307,1330 @@ body {
     height:  50px;
     width: 50px;
 }
+}
+
+.ice-pop {
+    
+    /* Game Title */
+    
+    #game-title {
+        color: #DF2E38;
+        font-family: "Cherry Bomb One", system-ui;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+       
+    /* Main Container */
+    
+    #main-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    /* Add these styles to style the announcement */
+    #game-conclusion {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #ffffff;
+        color: #ff0000;
+        padding: 20px;
+        border-radius: 10px;
+        font-size: 24px;
+        z-index: 9999;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    
+    /* Player Details */
+    
+    #player {
+        background-color: #ffffff;
+        border: 4px solid #0081C9;
+        box-shadow: 2px 3px 5px 7px #EEEEEE;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 20px;
+        width: 350px;
+    }
+    
+    #player-type {
+        color: #0081C9;
+        font-family: "Cherry Bomb One", system-ui;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    /* Grid */
+    
+    #grid {
+        background-color: #ffffff;
+        border: 3.5px #ffffff;
+        border-radius: 4px;
+        box-shadow: 2px 3px 5px 7px #0081C9;
+        margin-top: 50px;
+        max-width: 600px;
+        padding: 7px;
+    }
+    
+    /* Grid Row */
+    
+    .row {
+        display: flex;
+    }
+    
+    /* Grid Column */
+    
+    .column {
+        align-items: center;
+        background-color: #ffffff;
+        border: 1px solid  #ffffff;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        margin: 5px;
+        width:  75px;
+    }
+    
+    /* Buttons */
+    
+    .button {
+        background-color: #EEEEEE;
+        border: none;
+        height: 100%;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .button:hover {
+        background-color: #ffffff;
+        color: #ffffff;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    
+    #reset-button {
+        background-color: #ffffff;
+        border: 2px solid #0081C9;
+        border-radius: 5px;
+        color: #ff0000;
+        font-family: "Cherry Bomb One", system-ui;
+        font-size: 1.5rem;
+        margin: 50px 0;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        transition: 1.5s;
+    }
+    
+    #reset-button:hover {
+        background-color: #ffffff;
+        color: #0081C9;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    
+    /* Player - 1 Buttons */
+    
+    .button-player-1 {
+        background-color: #DF2E38;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        color: #0081C9;
+        height:  50px;
+        width: 50px;
+    }
+    
+    /* Player - 2 Buttons */
+    
+    .button-player-2 {
+        background-color: #0081C9;
+        border: 2px solid #ffffff;
+        border-radius: 50%;
+        color: #DF2E38;
+        height:  50px;
+        width: 50px;
+    }
+}   
+
+.vice-city {
+
+/* Game Title */
+
+#game-title {
+    color: #ffffff;
+    font-family: "Lobster", sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+   
+/* Main Container */
+
+#main-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+/* Add these styles to style the announcement */
+#game-conclusion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: "Lobster", sans-serif;
+    font-size: 24px;
+    z-index: 9999;
+}
+
+.hide {
+    display: none;
+}
+
+
+/* Player Details */
+
+#player {
+    background-color: #000000;
+    border: 4px solid #705dd0;
+    box-shadow: 2px 3px 5px 7px #ab2a7a;
+    border-radius: 10px;
+    margin-top: 50px;
+    padding: 20px;
+    width: 350px;
+}
+
+#player-type {
+    color: #ffffff;
+    font-family: "Lobster", sans-serif;
+    letter-spacing: 5px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+/* Grid */
+
+#grid {
+    background-color: #000000;
+    border: 3.5px #705dd0;
+    border-radius: 4px;
+    box-shadow: 2px 3px 5px 7px #ab2a7a;
+    margin-top: 50px;
+    max-width: 600px;
+    padding: 7px;
+}
+
+/* Grid Row */
+
+.row {
+    display: flex;
+}
+
+/* Grid Column */
+
+.column {
+    align-items: center;
+    background-color: #705dd0;
+    border: 1px solid  #ab2a7a;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    height: 75px;
+    margin: 5px;
+    width:  75px;
+}
+
+/* Buttons */
+
+.button {
+    background-color: #EEEEEE;
+    border: none;
+    height: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+.button:hover {
+    background-color: #ab2a7a;
+    color: #ab2a7a;;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+#reset-button {
+    background-color: #000000;
+    border: 2px solid #ab2a7a;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: "Lobster", sans-serif;
+    font-size: 1.5rem;
+    margin: 50px 0;
+    padding: 10px 40px;
+    text-transform: uppercase;
+    transition: 1.5s;
+}
+
+#reset-button:hover {
+    background-color: #705dd0;
+    color: #ab2a7a;
+    cursor: pointer;
+    transition: 1.5s;
+}
+
+/* Player - 1 Buttons */
+
+.button-player-1 {
+    background-color: #cab7d7;
+    border: 2px solid #000000;
+    border-radius: 50%;
+    color: #000000;
+    height:  50px;
+    width: 50px;
+}
+
+/* Player - 2 Buttons */
+
+.button-player-2 {
+    background-color: #494e3c;
+    border: 2px solid #3d1427;
+    border-radius: 50%;
+    color: #EEEEEE;
+    height:  50px;
+    width: 50px;
+}
+}
+
+.star-wars {
+    
+    /* Game Title */
+    
+    #game-title {
+        color: #f4eb3b;
+        font-family: "Poller One", serif;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+       
+    /* Main Container */
+    
+    #main-container {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        min-height: 100vh;
+    }
+    
+    /* Add these styles to style the announcement */
+    #game-conclusion {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: #000000;
+        color: #f4eb3b;
+        padding: 20px;
+        border-radius: 10px;
+        font-family: "Poller One", serif;
+        font-size: 24px;
+        z-index: 9999;
+    }
+    
+    .hide {
+        display: none;
+    }
+    
+    
+    /* Player Details */
+    
+    #player {
+        background-color: #000000;
+        border: 4px solid #f4eb3b;
+        box-shadow: 2px 3px 5px 7px #EEEEEE;
+        border-radius: 10px;
+        margin-top: 50px;
+        padding: 20px;
+        width: 350px;
+    }
+    
+    #player-type {
+        color: #f4eb3b;
+        font-family: "Poller One", serif;
+        letter-spacing: 5px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    
+    /* Grid */
+    
+    #grid {
+        background-color: #000000;
+        border: 3.5px #f4eb3b;
+        border-radius: 4px;
+        box-shadow: 2px 3px 5px 7px #EEEEEE;
+        margin-top: 50px;
+        max-width: 600px;
+        padding: 7px;
+    }
+    
+    /* Grid Row */
+    
+    .row {
+        display: flex;
+    }
+    
+    /* Grid Column */
+    
+    .column {
+        align-items: center;
+        background-color: #f4eb3b;
+        border: 1px solid  #f4eb3b;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        height: 75px;
+        margin: 5px;
+        width:  75px;
+    }
+    
+    /* Buttons */
+    
+    .button {
+        background-color: #EEEEEE;
+        border: none;
+        height: 100%;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .button:hover {
+        background-color: #000000;
+        color: #EEEEEE;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    
+    #reset-button {
+        background-color: #000000;
+        border: 2px solid #f4eb3b;
+        border-radius: 5px;
+        color: #e53d39;
+        font-family: "Poller One", serif;
+        font-size: 1.5rem;
+        margin: 50px 0;
+        padding: 10px 40px;
+        text-transform: uppercase;
+        transition: 1.5s;
+    }
+    
+    #reset-button:hover {
+        background-color: #000000;
+        color: #2161c7;
+        cursor: pointer;
+        transition: 1.5s;
+    }
+    
+    /* Player - 1 Buttons */
+    
+    .button-player-1 {
+        background-color: #e53d39;
+        border: 2px solid #000000;
+        border-radius: 50%;
+        color: #000000;
+        height:  50px;
+        width: 50px;
+    }
+    
+    /* Player - 2 Buttons */
+    
+    .button-player-2 {
+        background-color: #2161c7;
+        border: 2px solid #EEEEEE;
+        border-radius: 50%;
+        color: #EEEEEE;
+        height:  50px;
+        width: 50px;
+    }
+    }
+    
+    .barbie {
+        
+        /* Game Title */
+        
+        #game-title {
+            color: #ffd6e8;
+            font-family: "Lobster Two", sans-serif;
+            letter-spacing: 5px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+           
+        /* Main Container */
+        
+        #main-container {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-height: 100vh;
+        }
+        
+        /* Add these styles to style the announcement */
+        #game-conclusion {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #f086b9;
+            color: #edf03f;
+            padding: 20px;
+            border-radius: 10px;
+            font-family: "Lobster Two", sans-serif;
+            font-size: 24px;
+            z-index: 9999;
+        }
+        
+        .hide {
+            display: none;
+        }
+        
+        
+        /* Player Details */
+        
+        #player {
+            background-color: #f086b9;
+            border: 4px solid #f086b9;
+            box-shadow: 2px 3px 5px 7px #edf03f;
+            border-radius: 10px;
+            margin-top: 50px;
+            padding: 20px;
+            width: 350px;
+        }
+        
+        #player-type {
+            color: #edf03f;
+            font-family: "Lobster Two", sans-serif;
+            letter-spacing: 5px;
+            text-align: center;
+            text-transform: uppercase;
+        }
+        
+        /* Grid */
+        
+        #grid {
+            background-color: #f086b9;
+            border: 3.5px #edf03f;
+            border-radius: 4px;
+            box-shadow: 2px 3px 5px 7px #edf03f;
+            margin-top: 50px;
+            max-width: 600px;
+            padding: 7px;
+        }
+        
+        /* Grid Row */
+        
+        .row {
+            display: flex;
+        }
+        
+        /* Grid Column */
+        
+        .column {
+            align-items: center;
+            background-color: #edf03f;
+            border: 1px solid  #f086b9;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+            height: 75px;
+            margin: 5px;
+            width:  75px;
+        }
+        
+        /* Buttons */
+        
+        .button {
+            background-color: #EEEEEE;
+            border: none;
+            height: 100%;
+            padding: 0;
+            width: 100%;
+        }
+        
+        .button:hover {
+            background-color: #eed9e0;
+            color: #EEEEEE;
+            cursor: pointer;
+            transition: 1.5s;
+        }
+        
+        #reset-button {
+            background-color: #f086b9;
+            border: 2px solid #edf03f;
+            border-radius: 5px;
+            color: #edf03f;
+            font-family: "Lobster Two", sans-serif;
+            font-size: 1.5rem;
+            margin: 50px 0;
+            padding: 10px 40px;
+            text-transform: uppercase;
+            transition: 1.5s;
+        }
+        
+        #reset-button:hover {
+            background-color: #edf03f;
+            color: #f086b9;
+            cursor: pointer;
+            transition: 1.5s;
+        }
+        
+        /* Player - 1 Buttons */
+        
+        .button-player-1 {
+            background-color: #bcc078;
+            border: 2px solid #bcc078;
+            border-radius: 50%;
+            color: #000000;
+            height:  50px;
+            width: 50px;
+        }
+        
+        /* Player - 2 Buttons */
+        
+        .button-player-2 {
+            background-color: #cc219e;
+            border: 2px solid #cd485d;
+            border-radius: 50%;
+            color: #EEEEEE;
+            height:  50px;
+            width: 50px;
+        }
+        }
+        
+        .ferrari {
+
+            body {
+                background-color: #000000;
+            }
+            
+            .press-start {
+                font-family: "Press Start 2P", system-ui;
+                font-weight: 400;
+                font-style: normal;
+              }
+            
+            /* Game Title */
+            
+            #game-title {
+                color: #ff0000;
+                font-family: "Press Start 2P", system-ui;
+                letter-spacing: 5px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+               
+            /* Main Container */
+            
+            #main-container {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                min-height: 100vh;
+            }
+            
+            /* Add these styles to style the announcement */
+            #game-conclusion {
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background-color: #000000;
+                color: #00FF00;
+                padding: 20px;
+                border-radius: 10px;
+                font-size: 24px;
+                z-index: 9999;
+            }
+            
+            .hide {
+                display: none;
+            }
+            
+            
+            /* Player Details */
+            
+            #player {
+                background-color: #000000;
+                border: 4px solid #ff6f00;
+                box-shadow: 2px 3px 5px 7px #EEEEEE;
+                border-radius: 10px;
+                margin-top: 50px;
+                padding: 20px;
+                width: 350px;
+            }
+            
+            #player-type {
+                color: #ff6f00;
+                font-family: "Press Start 2P", system-ui;
+                letter-spacing: 5px;
+                text-align: center;
+                text-transform: uppercase;
+            }
+            
+            /* Grid */
+            
+            #grid {
+                background-color: #000000;
+                border: 3.5px #ff0000;
+                border-radius: 4px;
+                box-shadow: 2px 3px 5px 7px #EEEEEE;
+                margin-top: 50px;
+                max-width: 600px;
+                padding: 7px;
+            }
+            
+            /* Grid Row */
+            
+            .row {
+                display: flex;
+            }
+            
+            /* Grid Column */
+            
+            .column {
+                align-items: center;
+                background-color: #ff0000;
+                border: 1px solid  #ff6f00;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                height: 75px;
+                margin: 5px;
+                width:  75px;
+            }
+            
+            /* Buttons */
+            
+            .button {
+                background-color: #EEEEEE;
+                border: none;
+                height: 100%;
+                padding: 0;
+                width: 100%;
+            }
+            
+            .button:hover {
+                background-color: #000000;
+                color: #EEEEEE;
+                cursor: pointer;
+                transition: 1.5s;
+            }
+            
+            #reset-button {
+                background-color: #000000;
+                border: 2px solid #ff6f00;
+                border-radius: 5px;
+                color: #ff0000;
+                font-family: "Press Start 2P", system-ui;
+                font-size: 1.5rem;
+                margin: 50px 0;
+                padding: 10px 40px;
+                text-transform: uppercase;
+                transition: 1.5s;
+            }
+            
+            #reset-button:hover {
+                background-color: #000000;
+                color: #00FF00;
+                cursor: pointer;
+                transition: 1.5s;
+            }
+            
+            /* Player - 1 Buttons */
+            
+            .button-player-1 {
+                background-color: #000000;
+                border: 2px solid #000000;
+                border-radius: 50%;
+                color: #000000;
+                height:  50px;
+                width: 50px;
+            }
+            
+            /* Player - 2 Buttons */
+            
+            .button-player-2 {
+                background-color: #EEEEEE;
+                border: 2px solid #EEEEEE;
+                border-radius: 50%;
+                color: #EEEEEE;
+                height:  50px;
+                width: 50px;
+            }
+            }
+
+            .mercedes {
+
+                body {
+                    background-color: #000000;
+                }
+                
+                .press-start {
+                    font-family: "Press Start 2P", system-ui;
+                    font-weight: 400;
+                    font-style: normal;
+                  }
+                
+                /* Game Title */
+                
+                #game-title {
+                    color: #ff0000;
+                    font-family: "Press Start 2P", system-ui;
+                    letter-spacing: 5px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                   
+                /* Main Container */
+                
+                #main-container {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    min-height: 100vh;
+                }
+                
+                /* Add these styles to style the announcement */
+                #game-conclusion {
+                    position: fixed;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    background-color: #000000;
+                    color: #00FF00;
+                    padding: 20px;
+                    border-radius: 10px;
+                    font-size: 24px;
+                    z-index: 9999;
+                }
+                
+                .hide {
+                    display: none;
+                }
+                
+                
+                /* Player Details */
+                
+                #player {
+                    background-color: #000000;
+                    border: 4px solid #ff6f00;
+                    box-shadow: 2px 3px 5px 7px #EEEEEE;
+                    border-radius: 10px;
+                    margin-top: 50px;
+                    padding: 20px;
+                    width: 350px;
+                }
+                
+                #player-type {
+                    color: #ff6f00;
+                    font-family: "Press Start 2P", system-ui;
+                    letter-spacing: 5px;
+                    text-align: center;
+                    text-transform: uppercase;
+                }
+                
+                /* Grid */
+                
+                #grid {
+                    background-color: #000000;
+                    border: 3.5px #ff0000;
+                    border-radius: 4px;
+                    box-shadow: 2px 3px 5px 7px #EEEEEE;
+                    margin-top: 50px;
+                    max-width: 600px;
+                    padding: 7px;
+                }
+                
+                /* Grid Row */
+                
+                .row {
+                    display: flex;
+                }
+                
+                /* Grid Column */
+                
+                .column {
+                    align-items: center;
+                    background-color: #ff0000;
+                    border: 1px solid  #ff6f00;
+                    border-radius: 5px;
+                    display: flex;
+                    justify-content: center;
+                    height: 75px;
+                    margin: 5px;
+                    width:  75px;
+                }
+                
+                /* Buttons */
+                
+                .button {
+                    background-color: #EEEEEE;
+                    border: none;
+                    height: 100%;
+                    padding: 0;
+                    width: 100%;
+                }
+                
+                .button:hover {
+                    background-color: #000000;
+                    color: #EEEEEE;
+                    cursor: pointer;
+                    transition: 1.5s;
+                }
+                
+                #reset-button {
+                    background-color: #000000;
+                    border: 2px solid #ff6f00;
+                    border-radius: 5px;
+                    color: #ff0000;
+                    font-family: "Press Start 2P", system-ui;
+                    font-size: 1.5rem;
+                    margin: 50px 0;
+                    padding: 10px 40px;
+                    text-transform: uppercase;
+                    transition: 1.5s;
+                }
+                
+                #reset-button:hover {
+                    background-color: #000000;
+                    color: #00FF00;
+                    cursor: pointer;
+                    transition: 1.5s;
+                }
+                
+                /* Player - 1 Buttons */
+                
+                .button-player-1 {
+                    background-color: #000000;
+                    border: 2px solid #000000;
+                    border-radius: 50%;
+                    color: #000000;
+                    height:  50px;
+                    width: 50px;
+                }
+                
+                /* Player - 2 Buttons */
+                
+                .button-player-2 {
+                    background-color: #EEEEEE;
+                    border: 2px solid #EEEEEE;
+                    border-radius: 50%;
+                    color: #EEEEEE;
+                    height:  50px;
+                    width: 50px;
+                }
+                }
+
+                .red-bull {
+
+                    body {
+                        background-color: #000000;
+                    }
+                    
+                    .press-start {
+                        font-family: "Press Start 2P", system-ui;
+                        font-weight: 400;
+                        font-style: normal;
+                      }
+                    
+                    /* Game Title */
+                    
+                    #game-title {
+                        color: #ff0000;
+                        font-family: "Press Start 2P", system-ui;
+                        letter-spacing: 5px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                       
+                    /* Main Container */
+                    
+                    #main-container {
+                        align-items: center;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        min-height: 100vh;
+                    }
+                    
+                    /* Add these styles to style the announcement */
+                    #game-conclusion {
+                        position: fixed;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        background-color: #000000;
+                        color: #00FF00;
+                        padding: 20px;
+                        border-radius: 10px;
+                        font-size: 24px;
+                        z-index: 9999;
+                    }
+                    
+                    .hide {
+                        display: none;
+                    }
+                    
+                    
+                    /* Player Details */
+                    
+                    #player {
+                        background-color: #000000;
+                        border: 4px solid #ff6f00;
+                        box-shadow: 2px 3px 5px 7px #EEEEEE;
+                        border-radius: 10px;
+                        margin-top: 50px;
+                        padding: 20px;
+                        width: 350px;
+                    }
+                    
+                    #player-type {
+                        color: #ff6f00;
+                        font-family: "Press Start 2P", system-ui;
+                        letter-spacing: 5px;
+                        text-align: center;
+                        text-transform: uppercase;
+                    }
+                    
+                    /* Grid */
+                    
+                    #grid {
+                        background-color: #000000;
+                        border: 3.5px #ff0000;
+                        border-radius: 4px;
+                        box-shadow: 2px 3px 5px 7px #EEEEEE;
+                        margin-top: 50px;
+                        max-width: 600px;
+                        padding: 7px;
+                    }
+                    
+                    /* Grid Row */
+                    
+                    .row {
+                        display: flex;
+                    }
+                    
+                    /* Grid Column */
+                    
+                    .column {
+                        align-items: center;
+                        background-color: #ff0000;
+                        border: 1px solid  #ff6f00;
+                        border-radius: 5px;
+                        display: flex;
+                        justify-content: center;
+                        height: 75px;
+                        margin: 5px;
+                        width:  75px;
+                    }
+                    
+                    /* Buttons */
+                    
+                    .button {
+                        background-color: #EEEEEE;
+                        border: none;
+                        height: 100%;
+                        padding: 0;
+                        width: 100%;
+                    }
+                    
+                    .button:hover {
+                        background-color: #000000;
+                        color: #EEEEEE;
+                        cursor: pointer;
+                        transition: 1.5s;
+                    }
+                    
+                    #reset-button {
+                        background-color: #000000;
+                        border: 2px solid #ff6f00;
+                        border-radius: 5px;
+                        color: #ff0000;
+                        font-family: "Press Start 2P", system-ui;
+                        font-size: 1.5rem;
+                        margin: 50px 0;
+                        padding: 10px 40px;
+                        text-transform: uppercase;
+                        transition: 1.5s;
+                    }
+                    
+                    #reset-button:hover {
+                        background-color: #000000;
+                        color: #00FF00;
+                        cursor: pointer;
+                        transition: 1.5s;
+                    }
+                    
+                    /* Player - 1 Buttons */
+                    
+                    .button-player-1 {
+                        background-color: #000000;
+                        border: 2px solid #000000;
+                        border-radius: 50%;
+                        color: #000000;
+                        height:  50px;
+                        width: 50px;
+                    }
+                    
+                    /* Player - 2 Buttons */
+                    
+                    .button-player-2 {
+                        background-color: #EEEEEE;
+                        border: 2px solid #EEEEEE;
+                        border-radius: 50%;
+                        color: #EEEEEE;
+                        height:  50px;
+                        width: 50px;
+                    }
+                    }
+
+                    .mocha {
+
+                        body {
+                            background-color: #000000;
+                        }
+                        
+                        .press-start {
+                            font-family: "Press Start 2P", system-ui;
+                            font-weight: 400;
+                            font-style: normal;
+                          }
+                        
+                        /* Game Title */
+                        
+                        #game-title {
+                            color: #ff0000;
+                            font-family: "Press Start 2P", system-ui;
+                            letter-spacing: 5px;
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
+                           
+                        /* Main Container */
+                        
+                        #main-container {
+                            align-items: center;
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: center;
+                            min-height: 100vh;
+                        }
+                        
+                        /* Add these styles to style the announcement */
+                        #game-conclusion {
+                            position: fixed;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%, -50%);
+                            background-color: #000000;
+                            color: #00FF00;
+                            padding: 20px;
+                            border-radius: 10px;
+                            font-size: 24px;
+                            z-index: 9999;
+                        }
+                        
+                        .hide {
+                            display: none;
+                        }
+                        
+                        
+                        /* Player Details */
+                        
+                        #player {
+                            background-color: #000000;
+                            border: 4px solid #ff6f00;
+                            box-shadow: 2px 3px 5px 7px #EEEEEE;
+                            border-radius: 10px;
+                            margin-top: 50px;
+                            padding: 20px;
+                            width: 350px;
+                        }
+                        
+                        #player-type {
+                            color: #ff6f00;
+                            font-family: "Press Start 2P", system-ui;
+                            letter-spacing: 5px;
+                            text-align: center;
+                            text-transform: uppercase;
+                        }
+                        
+                        /* Grid */
+                        
+                        #grid {
+                            background-color: #000000;
+                            border: 3.5px #ff0000;
+                            border-radius: 4px;
+                            box-shadow: 2px 3px 5px 7px #EEEEEE;
+                            margin-top: 50px;
+                            max-width: 600px;
+                            padding: 7px;
+                        }
+                        
+                        /* Grid Row */
+                        
+                        .row {
+                            display: flex;
+                        }
+                        
+                        /* Grid Column */
+                        
+                        .column {
+                            align-items: center;
+                            background-color: #ff0000;
+                            border: 1px solid  #ff6f00;
+                            border-radius: 5px;
+                            display: flex;
+                            justify-content: center;
+                            height: 75px;
+                            margin: 5px;
+                            width:  75px;
+                        }
+                        
+                        /* Buttons */
+                        
+                        .button {
+                            background-color: #EEEEEE;
+                            border: none;
+                            height: 100%;
+                            padding: 0;
+                            width: 100%;
+                        }
+                        
+                        .button:hover {
+                            background-color: #000000;
+                            color: #EEEEEE;
+                            cursor: pointer;
+                            transition: 1.5s;
+                        }
+                        
+                        #reset-button {
+                            background-color: #000000;
+                            border: 2px solid #ff6f00;
+                            border-radius: 5px;
+                            color: #ff0000;
+                            font-family: "Press Start 2P", system-ui;
+                            font-size: 1.5rem;
+                            margin: 50px 0;
+                            padding: 10px 40px;
+                            text-transform: uppercase;
+                            transition: 1.5s;
+                        }
+                        
+                        #reset-button:hover {
+                            background-color: #000000;
+                            color: #00FF00;
+                            cursor: pointer;
+                            transition: 1.5s;
+                        }
+                        
+                        /* Player - 1 Buttons */
+                        
+                        .button-player-1 {
+                            background-color: #000000;
+                            border: 2px solid #000000;
+                            border-radius: 50%;
+                            color: #000000;
+                            height:  50px;
+                            width: 50px;
+                        }
+                        
+                        /* Player - 2 Buttons */
+                        
+                        .button-player-2 {
+                            background-color: #EEEEEE;
+                            border: 2px solid #EEEEEE;
+                            border-radius: 50%;
+                            color: #EEEEEE;
+                            height:  50px;
+                            width: 50px;
+                        }
+                        }
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
 
 
 
