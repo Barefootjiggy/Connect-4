@@ -185,7 +185,7 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: #000000;
-    color: #ffffff;
+    color: #f2ad4a;
     padding: 20px;
     border-radius: 10px;
     font-size: 24px;
@@ -260,8 +260,8 @@ body {
 }
 
 .button:hover {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #f9a6db;
+    color: #ffffff;
     cursor: pointer;
     transition: 1.5s;
 }
@@ -281,7 +281,7 @@ body {
 
 #reset-button:hover {
     background-color: #000000;
-    color: #FFFF00;
+    color: #f2ad4a;
     cursor: pointer;
     transition: 1.5s;
 }
@@ -289,8 +289,8 @@ body {
 /* Player - 1 Buttons */
 
 .button-player-1 {
-    background-color: #000000;
-    border: 2px solid #000000;
+    background-color: #f50500;
+    border: 2px solid #f50500;
     border-radius: 50%;
     color: #000000;
     height:  50px;
@@ -300,8 +300,8 @@ body {
 /* Player - 2 Buttons */
 
 .button-player-2 {
-    background-color: #EEEEEE;
-    border: 2px solid #EEEEEE;
+    background-color: #00ffcc;
+    border: 2px solid #00ffcc;
     border-radius: 50%;
     color: #EEEEEE;
     height:  50px;
@@ -468,7 +468,7 @@ body {
 
 #game-title {
     color: #ffffff;
-    font-family: "Lobster", sans-serif;
+    font-family: "Bungee Shade", sans-serif;
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -494,7 +494,7 @@ body {
     color: #ffffff;
     padding: 20px;
     border-radius: 10px;
-    font-family: "Lobster", sans-serif;
+    font-family: "Bungee Shade", sans-serif;
     font-size: 24px;
     z-index: 9999;
 }
@@ -518,7 +518,7 @@ body {
 
 #player-type {
     color: #ffffff;
-    font-family: "Lobster", sans-serif;
+    font-family: "Bungee Shade", sans-serif;
     letter-spacing: 5px;
     text-align: center;
     text-transform: uppercase;
@@ -578,7 +578,7 @@ body {
     border: 2px solid #ab2a7a;
     border-radius: 5px;
     color: #ffffff;
-    font-family: "Lobster", sans-serif;
+    font-family: "Bungee Shade", sans-serif;
     font-size: 1.5rem;
     margin: 50px 0;
     padding: 10px 40px;
@@ -622,7 +622,7 @@ body {
     
     #game-title {
         color: #f4eb3b;
-        font-family: "Poller One", serif;
+        font-family: "Notable", sans-serif;
         letter-spacing: 5px;
         text-align: center;
         text-transform: uppercase;
@@ -648,7 +648,7 @@ body {
         color: #f4eb3b;
         padding: 20px;
         border-radius: 10px;
-        font-family: "Poller One", serif;
+        font-family: "Notable", sans-serif;
         font-size: 24px;
         z-index: 9999;
     }
@@ -672,7 +672,7 @@ body {
     
     #player-type {
         color: #f4eb3b;
-        font-family: "Poller One", serif;
+        font-family: "Notable", sans-serif;
         letter-spacing: 5px;
         text-align: center;
         text-transform: uppercase;
@@ -732,7 +732,7 @@ body {
         border: 2px solid #f4eb3b;
         border-radius: 5px;
         color: #e53d39;
-        font-family: "Poller One", serif;
+        font-family: "Notable", sans-serif;
         font-size: 1.5rem;
         margin: 50px 0;
         padding: 10px 40px;
@@ -925,22 +925,12 @@ body {
         }
         
         .ferrari {
-
-            body {
-                background-color: #000000;
-            }
-            
-            .press-start {
-                font-family: "Press Start 2P", system-ui;
-                font-weight: 400;
-                font-style: normal;
-              }
             
             /* Game Title */
             
             #game-title {
-                color: #ff0000;
-                font-family: "Press Start 2P", system-ui;
+                color: #000000;
+                font-family: "Rubik Wet Paint", system-ui;
                 letter-spacing: 5px;
                 text-align: center;
                 text-transform: uppercase;
@@ -962,10 +952,11 @@ body {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                background-color: #000000;
-                color: #00FF00;
+                background-color: #FFF200;
+                color: #000000;
                 padding: 20px;
                 border-radius: 10px;
+                font-family: "Rubik Wet Paint", system-ui;;
                 font-size: 24px;
                 z-index: 9999;
             }
@@ -978,9 +969,9 @@ body {
             /* Player Details */
             
             #player {
-                background-color: #000000;
-                border: 4px solid #ff6f00;
-                box-shadow: 2px 3px 5px 7px #EEEEEE;
+                background-color: #FFF200;
+                border: 4px solid #000000;
+                box-shadow: 2px 3px 5px 7px #FFF200;
                 border-radius: 10px;
                 margin-top: 50px;
                 padding: 20px;
@@ -988,8 +979,8 @@ body {
             }
             
             #player-type {
-                color: #ff6f00;
-                font-family: "Press Start 2P", system-ui;
+                color: #000000;
+                font-family: "Rubik Wet Paint", system-ui;
                 letter-spacing: 5px;
                 text-align: center;
                 text-transform: uppercase;
@@ -998,10 +989,10 @@ body {
             /* Grid */
             
             #grid {
-                background-color: #000000;
-                border: 3.5px #ff0000;
+                background-color: #EF1A2D;
+                border: 3.5px #EF1A2D;
                 border-radius: 4px;
-                box-shadow: 2px 3px 5px 7px #EEEEEE;
+                box-shadow: 2px 3px 5px 7px #00A551;
                 margin-top: 50px;
                 max-width: 600px;
                 padding: 7px;
@@ -1017,8 +1008,8 @@ body {
             
             .column {
                 align-items: center;
-                background-color: #ff0000;
-                border: 1px solid  #ff6f00;
+                background-color: #796362;
+                border: 1px solid  #FFF200;
                 border-radius: 5px;
                 display: flex;
                 justify-content: center;
@@ -1038,18 +1029,18 @@ body {
             }
             
             .button:hover {
-                background-color: #000000;
+                background-color: #796362;
                 color: #EEEEEE;
                 cursor: pointer;
                 transition: 1.5s;
             }
             
             #reset-button {
-                background-color: #000000;
-                border: 2px solid #ff6f00;
+                background-color: #ffffff;
+                border: 2px solid #00A551;
                 border-radius: 5px;
-                color: #ff0000;
-                font-family: "Press Start 2P", system-ui;
+                color: #EF1A2D;
+                font-family: "Rubik Wet Paint", system-ui;
                 font-size: 1.5rem;
                 margin: 50px 0;
                 padding: 10px 40px;
@@ -1058,8 +1049,8 @@ body {
             }
             
             #reset-button:hover {
-                background-color: #000000;
-                color: #00FF00;
+                background-color: #FFF200;
+                color: #000000;
                 cursor: pointer;
                 transition: 1.5s;
             }
@@ -1067,7 +1058,7 @@ body {
             /* Player - 1 Buttons */
             
             .button-player-1 {
-                background-color: #000000;
+                background-color: #EF1A2D;
                 border: 2px solid #000000;
                 border-radius: 50%;
                 color: #000000;
@@ -1078,32 +1069,22 @@ body {
             /* Player - 2 Buttons */
             
             .button-player-2 {
-                background-color: #EEEEEE;
-                border: 2px solid #EEEEEE;
+                background-color: #000000;
+                border: 2px solid #000000;
                 border-radius: 50%;
-                color: #EEEEEE;
+                color: #000000;
                 height:  50px;
                 width: 50px;
             }
             }
 
             .mercedes {
-
-                body {
-                    background-color: #000000;
-                }
-                
-                .press-start {
-                    font-family: "Press Start 2P", system-ui;
-                    font-weight: 400;
-                    font-style: normal;
-                  }
                 
                 /* Game Title */
                 
                 #game-title {
-                    color: #ff0000;
-                    font-family: "Press Start 2P", system-ui;
+                    color: #565F64;
+                    font-family: "Gajraj One", sans-serif;
                     letter-spacing: 5px;
                     text-align: center;
                     text-transform: uppercase;
@@ -1125,10 +1106,11 @@ body {
                     top: 50%;
                     left: 50%;
                     transform: translate(-50%, -50%);
-                    background-color: #000000;
-                    color: #00FF00;
+                    background-color: #00A19B;
+                    color: #ffffff;
                     padding: 20px;
                     border-radius: 10px;
+                    font-family: "Gajraj One", sans-serif;
                     font-size: 24px;
                     z-index: 9999;
                 }
@@ -1141,8 +1123,8 @@ body {
                 /* Player Details */
                 
                 #player {
-                    background-color: #000000;
-                    border: 4px solid #ff6f00;
+                    background-color: #ffffff;
+                    border: 4px solid #00A19B;
                     box-shadow: 2px 3px 5px 7px #EEEEEE;
                     border-radius: 10px;
                     margin-top: 50px;
@@ -1151,8 +1133,8 @@ body {
                 }
                 
                 #player-type {
-                    color: #ff6f00;
-                    font-family: "Press Start 2P", system-ui;
+                    color: #C8CCCE;
+                    font-family: "Gajraj One", sans-serif;
                     letter-spacing: 5px;
                     text-align: center;
                     text-transform: uppercase;
@@ -1161,10 +1143,10 @@ body {
                 /* Grid */
                 
                 #grid {
-                    background-color: #000000;
-                    border: 3.5px #ff0000;
+                    background-color: #EEEEEE;
+                    border: 3.5px #565F64;
                     border-radius: 4px;
-                    box-shadow: 2px 3px 5px 7px #EEEEEE;
+                    box-shadow: 2px 3px 5px 7px #ffffff;
                     margin-top: 50px;
                     max-width: 600px;
                     padding: 7px;
@@ -1180,8 +1162,8 @@ body {
                 
                 .column {
                     align-items: center;
-                    background-color: #ff0000;
-                    border: 1px solid  #ff6f00;
+                    background-color: #565F64;
+                    border: 1px solid  #ffffff;
                     border-radius: 5px;
                     display: flex;
                     justify-content: center;
@@ -1208,11 +1190,11 @@ body {
                 }
                 
                 #reset-button {
-                    background-color: #000000;
-                    border: 2px solid #ff6f00;
+                    background-color: #ffffff;
+                    border: 2px solid #EEEEEE;
                     border-radius: 5px;
-                    color: #ff0000;
-                    font-family: "Press Start 2P", system-ui;
+                    color: #565F64;
+                    font-family: "Gajraj One", sans-serif;
                     font-size: 1.5rem;
                     margin: 50px 0;
                     padding: 10px 40px;
@@ -1222,7 +1204,7 @@ body {
                 
                 #reset-button:hover {
                     background-color: #000000;
-                    color: #00FF00;
+                    color: #EEEEEE;
                     cursor: pointer;
                     transition: 1.5s;
                 }
@@ -1230,10 +1212,10 @@ body {
                 /* Player - 1 Buttons */
                 
                 .button-player-1 {
-                    background-color: #000000;
-                    border: 2px solid #000000;
+                    background-color: #00A19B;
+                    border: 2px solid #565F64;
                     border-radius: 50%;
-                    color: #000000;
+                    color: #565F64;
                     height:  50px;
                     width: 50px;
                 }
@@ -1244,29 +1226,19 @@ body {
                     background-color: #EEEEEE;
                     border: 2px solid #EEEEEE;
                     border-radius: 50%;
-                    color: #EEEEEE;
+                    color: #565F64;
                     height:  50px;
                     width: 50px;
                 }
                 }
 
                 .red-bull {
-
-                    body {
-                        background-color: #000000;
-                    }
-                    
-                    .press-start {
-                        font-family: "Press Start 2P", system-ui;
-                        font-weight: 400;
-                        font-style: normal;
-                      }
                     
                     /* Game Title */
                     
                     #game-title {
-                        color: #ff0000;
-                        font-family: "Press Start 2P", system-ui;
+                        color: #E30118;
+                        font-family: "Noto Sans Rejang", sans-serif;
                         letter-spacing: 5px;
                         text-align: center;
                         text-transform: uppercase;
@@ -1288,10 +1260,11 @@ body {
                         top: 50%;
                         left: 50%;
                         transform: translate(-50%, -50%);
-                        background-color: #000000;
-                        color: #00FF00;
+                        background-color: #352e3d;
+                        color: #FDD900;
                         padding: 20px;
                         border-radius: 10px;
+                        font-family: "Noto Sans Rejang", sans-serif;
                         font-size: 24px;
                         z-index: 9999;
                     }
@@ -1304,9 +1277,9 @@ body {
                     /* Player Details */
                     
                     #player {
-                        background-color: #000000;
-                        border: 4px solid #ff6f00;
-                        box-shadow: 2px 3px 5px 7px #EEEEEE;
+                        background-color: #352e3d;
+                        border: 4px solid #C0BFBF;
+                        box-shadow: 2px 3px 5px 7px #C0BFBF;
                         border-radius: 10px;
                         margin-top: 50px;
                         padding: 20px;
@@ -1314,8 +1287,8 @@ body {
                     }
                     
                     #player-type {
-                        color: #ff6f00;
-                        font-family: "Press Start 2P", system-ui;
+                        color: #FDD900;
+                        font-family: "Noto Sans Rejang", sans-serif;
                         letter-spacing: 5px;
                         text-align: center;
                         text-transform: uppercase;
@@ -1324,10 +1297,10 @@ body {
                     /* Grid */
                     
                     #grid {
-                        background-color: #000000;
-                        border: 3.5px #ff0000;
+                        background-color: #352e3d;
+                        border: 3.5px #E30118;
                         border-radius: 4px;
-                        box-shadow: 2px 3px 5px 7px #EEEEEE;
+                        box-shadow: 2px 3px 5px 7px #C0BFBF;
                         margin-top: 50px;
                         max-width: 600px;
                         padding: 7px;
@@ -1343,8 +1316,8 @@ body {
                     
                     .column {
                         align-items: center;
-                        background-color: #ff0000;
-                        border: 1px solid  #ff6f00;
+                        background-color: #E30118;
+                        border: 1px solid #352e3d;
                         border-radius: 5px;
                         display: flex;
                         justify-content: center;
@@ -1356,7 +1329,7 @@ body {
                     /* Buttons */
                     
                     .button {
-                        background-color: #EEEEEE;
+                        background-color: #e2e4e9;
                         border: none;
                         height: 100%;
                         padding: 0;
@@ -1364,18 +1337,18 @@ body {
                     }
                     
                     .button:hover {
-                        background-color: #000000;
-                        color: #EEEEEE;
+                        background-color: #352e3d;
+                        color: #C0BFBF;
                         cursor: pointer;
                         transition: 1.5s;
                     }
                     
                     #reset-button {
-                        background-color: #000000;
-                        border: 2px solid #ff6f00;
+                        background-color: #352e3d;
+                        border: 2px solid #FDD900;
                         border-radius: 5px;
-                        color: #ff0000;
-                        font-family: "Press Start 2P", system-ui;
+                        color: #E30118;
+                        font-family: "Noto Sans Rejang", sans-serif;
                         font-size: 1.5rem;
                         margin: 50px 0;
                         padding: 10px 40px;
@@ -1384,8 +1357,8 @@ body {
                     }
                     
                     #reset-button:hover {
-                        background-color: #000000;
-                        color: #00FF00;
+                        background-color: #C0BFBF;
+                        color: #352e3d;
                         cursor: pointer;
                         transition: 1.5s;
                     }
@@ -1393,8 +1366,8 @@ body {
                     /* Player - 1 Buttons */
                     
                     .button-player-1 {
-                        background-color: #000000;
-                        border: 2px solid #000000;
+                        background-color: #C0BFBF;
+                        border: 2px solid #352e3d;
                         border-radius: 50%;
                         color: #000000;
                         height:  50px;
@@ -1404,32 +1377,22 @@ body {
                     /* Player - 2 Buttons */
                     
                     .button-player-2 {
-                        background-color: #EEEEEE;
-                        border: 2px solid #EEEEEE;
+                        background-color: #352e3d;
+                        border: 2px solid #C0BFBF;
                         border-radius: 50%;
-                        color: #EEEEEE;
+                        color: #ffffff;
                         height:  50px;
                         width: 50px;
                     }
                     }
 
                     .mocha {
-
-                        body {
-                            background-color: #000000;
-                        }
-                        
-                        .press-start {
-                            font-family: "Press Start 2P", system-ui;
-                            font-weight: 400;
-                            font-style: normal;
-                          }
                         
                         /* Game Title */
                         
                         #game-title {
-                            color: #ff0000;
-                            font-family: "Press Start 2P", system-ui;
+                            color: #594235;
+                            font-family: "Libre Barcode 39 Text", system-ui;
                             letter-spacing: 5px;
                             text-align: center;
                             text-transform: uppercase;
@@ -1451,10 +1414,11 @@ body {
                             top: 50%;
                             left: 50%;
                             transform: translate(-50%, -50%);
-                            background-color: #000000;
-                            color: #00FF00;
+                            background-color: #4b382c;
+                            color: #906f5e;
                             padding: 20px;
                             border-radius: 10px;
+                            font-family: "Libre Barcode 39 Text", system-ui;
                             font-size: 24px;
                             z-index: 9999;
                         }
@@ -1467,9 +1431,9 @@ body {
                         /* Player Details */
                         
                         #player {
-                            background-color: #000000;
-                            border: 4px solid #ff6f00;
-                            box-shadow: 2px 3px 5px 7px #EEEEEE;
+                            background-color: #c6aa9c;
+                            border: 4px solid #4d3c32;
+                            box-shadow: 2px 3px 5px 7px #fadfd2;
                             border-radius: 10px;
                             margin-top: 50px;
                             padding: 20px;
@@ -1477,8 +1441,8 @@ body {
                         }
                         
                         #player-type {
-                            color: #ff6f00;
-                            font-family: "Press Start 2P", system-ui;
+                            color: #967969;
+                            font-family: "Libre Barcode 39 Text", system-ui;
                             letter-spacing: 5px;
                             text-align: center;
                             text-transform: uppercase;
@@ -1487,10 +1451,10 @@ body {
                         /* Grid */
                         
                         #grid {
-                            background-color: #000000;
-                            border: 3.5px #ff0000;
+                            background-color: #b6a59c;
+                            border: 3.5px #786d68;
                             border-radius: 4px;
-                            box-shadow: 2px 3px 5px 7px #EEEEEE;
+                            box-shadow: 2px 3px 5px 7px #f9e7de;
                             margin-top: 50px;
                             max-width: 600px;
                             padding: 7px;
@@ -1506,8 +1470,8 @@ body {
                         
                         .column {
                             align-items: center;
-                            background-color: #ff0000;
-                            border: 1px solid  #ff6f00;
+                            background-color: #887063;
+                            border: 1px solid  #564338;
                             border-radius: 5px;
                             display: flex;
                             justify-content: center;
@@ -1519,7 +1483,7 @@ body {
                         /* Buttons */
                         
                         .button {
-                            background-color: #EEEEEE;
+                            background-color: #ffdfcd;
                             border: none;
                             height: 100%;
                             padding: 0;
@@ -1527,18 +1491,18 @@ body {
                         }
                         
                         .button:hover {
-                            background-color: #000000;
-                            color: #EEEEEE;
+                            background-color: #695e58;
+                            color: #5c493e;
                             cursor: pointer;
                             transition: 1.5s;
                         }
                         
                         #reset-button {
-                            background-color: #000000;
-                            border: 2px solid #ff6f00;
+                            background-color: #ffcaab;
+                            border: 2px solid #42332a;
                             border-radius: 5px;
-                            color: #ff0000;
-                            font-family: "Press Start 2P", system-ui;
+                            color: #473a32;
+                            font-family: "Libre Barcode 39 Text", system-ui;
                             font-size: 1.5rem;
                             margin: 50px 0;
                             padding: 10px 40px;
@@ -1547,8 +1511,8 @@ body {
                         }
                         
                         #reset-button:hover {
-                            background-color: #000000;
-                            color: #00FF00;
+                            background-color: #3a2d25;
+                            color: #d5a98f;
                             cursor: pointer;
                             transition: 1.5s;
                         }
@@ -1556,10 +1520,10 @@ body {
                         /* Player - 1 Buttons */
                         
                         .button-player-1 {
-                            background-color: #000000;
-                            border: 2px solid #000000;
+                            background-color: #261d19;
+                            border: 2px solid #231b18;
                             border-radius: 50%;
-                            color: #000000;
+                            color: #2e2623;
                             height:  50px;
                             width: 50px;
                         }
@@ -1567,10 +1531,10 @@ body {
                         /* Player - 2 Buttons */
                         
                         .button-player-2 {
-                            background-color: #EEEEEE;
-                            border: 2px solid #EEEEEE;
+                            background-color: #ffd7c6;
+                            border: 2px solid #ecc6b6;
                             border-radius: 50%;
-                            color: #EEEEEE;
+                            color: #e2beaf;
                             height:  50px;
                             width: 50px;
                         }
