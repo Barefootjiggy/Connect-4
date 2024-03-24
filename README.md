@@ -34,6 +34,51 @@ Timeline:
 | Sunday     |   |                                    |          |                 |
 | Monday     |   | Present                            |          |                 |
 
+# Monday
+
+- [x]  Proposal Prompt
+- [x]  Create HTML
+
+# Tuesday
+
+- [x]  Create CSS
+- [x]  Create JS…
+- [x]  Initialize the game board
+- [x]  Constants for cells, player display, play again button, announcer
+- [x]  Variables for board, current player, active game
+- [x]  Establish and check for winning conditions after each move
+- [x]  Function to handle player variants of player moves
+
+# Wednesday
+
+- [x]  Implement a reset function to start a new game (reset function took some time for me to figure out how to reset the board and get the event listener for when the game ends declaring who wins to reset when the play again button was hit)
+- [x]  Add event listeners to handle player interactions, things that the players will be allowed to click on and have an action from
+- [x]  Update the game board and check for winning conditions accordingly
+- [x]  Update the display to show whose turn it is and the game outcome
+- [x]  Deployment
+
+# Thursday
+
+- [x]  Display the winner or a tie message when the game ends
+- [ ]  Display for game point
+- [x]  Implement styling and animations to enhance the user experience (This was the most satisfying making different themes and figuring out the hex codes to match up with the real life brands)
+
+# Friday
+
+- [x]  Add styling
+- [x]  What’s gonna be used for pieces?
+- [x]  Color of table and player pieces
+
+# Saturday
+
+- [ ]  Animations
+- [ ]  Sounds
+- [x]  Backgrounds
+- [ ]  Game Point
+- [ ]  Determine who goes first based on rock, paper, scissors or flipping coin
+- [ ]  Tracking sets of 3,5,7
+- [ ]  Computer option for easy, medium, hard
+
 Future enhancements:
 
 I tihnk it would be interesting to determine who gets to go first based on rock paper scissors kinda how my friends and I would sometimes because usually whoever goes first is most likely to win, or maybe do a coin toss. I'd love to do sound effects for pieces going in and animations for wins, loses, and ties. I'd also want to track a game of 3, 5 or 7, as well as a computer player with easy medium hard option.
