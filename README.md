@@ -14,7 +14,7 @@ Getting Started: https://connect-jp.netlify.app/
 Screenshots:
 
 Landing
-[Imgur](https://imgur.com/Epxn9Jz)
+[Imgur](https://imgur.com/Mny8wG0)
 
 In-Game
 [Imgur](https://imgur.com/k2B4yrg)
