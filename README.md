@@ -14,25 +14,16 @@ Getting Started: https://connect-jp.netlify.app/
 Screenshots:
 
 Landing
-Photo by Joshua Pierre from Pexels: https://www.pexels.com/photo/20757164/
+[Imgur](https://imgur.com/Epxn9Jz)
+
+In-Game
+[Imgur](https://imgur.com/k2B4yrg)
 
 Result
-Photo by Joshua Pierre from Pexels: https://www.pexels.com/photo/20757167/
-
-Photo by Joshua Pierre from Pexels: https://www.pexels.com/photo/20757169/
+[Imgur](https://imgur.com/obwyCh2)
 
 
 Timeline:
-| Day        |   | Task                               | Blockers | Notes/ Thoughts |
-|------------|---|------------------------------------|----------|-----------------|
-| Monday     |   | Create. present proposal, html     |          |                 |
-| Tuesday    |   | Create css, js                     |          |                 |
-| Wednesday  |   | Finalize MVP                       |          |                 |
-| Thursday   |   | Add functionality                  |          |                 |
-| Friday     |   | Add styling                        |          |                 |
-| Saturday   |   | Work on strech goals               |          |                 |
-| Sunday     |   |                                    |          |                 |
-| Monday     |   | Present                            |          |                 |
 
 # Monday
 
