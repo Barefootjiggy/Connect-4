@@ -13,16 +13,14 @@ Getting Started: https://connect-jp.netlify.app/
 
 Screenshots:
 
+Landing
 ![Connect 4](image.png)
 
-Landing
-[Imgur](https://imgur.com/Mny8wG0)
-
 In-Game
-[Imgur](https://imgur.com/k2B4yrg)
+![Connect 4 In-Game](image-2.png)
 
 Result
-[Imgur](https://imgur.com/obwyCh2)
+![Connect 4 Result](image-1.png)
 
 
 Timeline:
