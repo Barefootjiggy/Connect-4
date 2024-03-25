@@ -13,6 +13,8 @@ Getting Started: https://connect-jp.netlify.app/
 
 Screenshots:
 
+![Connect 4](image.png)
+
 Landing
 [Imgur](https://imgur.com/Mny8wG0)
 
