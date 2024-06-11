@@ -137,12 +137,18 @@
 /* Media query for mobile devices */
 @media (max-width: 480px) {
     .classic #player, .classic #grid {
-        width: 325px; /* Adjusted for smaller screens */
+        width: 300px; /* Adjusted for smaller screens */
     }
 
     .classic .column {
-        height: 50px; /* Adjusted for mobile screens */
-        width: 50px;  /* Adjusted for mobile screens */
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .classic .button-player-1, .classic .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
     }
 }
 
@@ -199,7 +205,7 @@
         border-radius: 10px;
         margin-top: 50px;
         padding: 20px;
-        width: 350px;
+        width: 375px;
     }
     
     #player-type {
@@ -217,9 +223,9 @@
         border: 3.5px #ff0000;
         border-radius: 4px;
         box-shadow: 2px 3px 5px 7px #EEEEEE;
-        margin-top: 50px;
+        margin-top: 20px;
         max-width: 600px;
-        padding: 7px;
+        padding: 5px;
     }
     
     /* Grid Row */
@@ -237,9 +243,9 @@
         border-radius: 5px;
         display: flex;
         justify-content: center;
-        height: 75px;
+        height: 60px;
         margin: 5px;
-        width:  75px;
+        width:  60px;
     }
     
     /* Buttons */
@@ -302,6 +308,24 @@
     }
 }
 
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .after-hours #player, .after-hours #grid {
+        width: 300px; /* Adjusted for smaller screens */
+    }
+
+    .after-hours .column {
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .after-hours .button-player-1, .after-hours .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+}
+
 .pac-man {
 
 /* Game Title */
@@ -352,7 +376,7 @@
     border-radius: 10px;
     margin-top: 50px;
     padding: 20px;
-    width: 350px;
+    width: 375px;
 }
 
 #player-type {
@@ -370,9 +394,9 @@
     border: 3.5px #102ad8;
     border-radius: 4px;
     box-shadow: 2px 3px 5px 7px #102ad8;
-    margin-top: 50px;
+    margin-top: 20px;
     max-width: 600px;
-    padding: 7px;
+    padding: 5px;
 }
 
 /* Grid Row */
@@ -390,9 +414,9 @@
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    height: 75px;
+    height: 60px;
     margin: 5px;
-    width:  75px;
+    width:  60px;
 }
 
 /* Buttons */
@@ -455,6 +479,24 @@
 }
 }
 
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .pac-man #player, .pac-man #grid {
+        width: 300px; /* Adjusted for smaller screens */
+    }
+
+    .pac-man .column {
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .pac-man .button-player-1, .pac-man .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+}
+
 .ice-pop {
     
     /* Game Title */
@@ -505,7 +547,7 @@
         border-radius: 10px;
         margin-top: 50px;
         padding: 20px;
-        width: 350px;
+        width: 375px;
     }
     
     #player-type {
@@ -523,9 +565,9 @@
         border: 3.5px #f9f9fb;
         border-radius: 4px;
         box-shadow: 2px 3px 5px 7px #0b89ba;
-        margin-top: 50px;
+        margin-top: 20px;
         max-width: 600px;
-        padding: 7px;
+        padding: 5px;
     }
     
     /* Grid Row */
@@ -543,9 +585,9 @@
         border-radius: 5px;
         display: flex;
         justify-content: center;
-        height: 75px;
+        height: 60px;
         margin: 5px;
-        width:  75px;
+        width:  60px;
     }
     
     /* Buttons */
@@ -606,7 +648,25 @@
         height:  50px;
         width: 50px;
     }
-}   
+}
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .ice-pop #player, .ice-pop #grid {
+        width: 300px; /* Adjusted for smaller screens */
+    }
+
+    .ice-pop .column {
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .ice-pop .button-player-1, .ice-pop .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+}
 
 .vice-city {
 
@@ -659,7 +719,7 @@
     border-radius: 10px;
     margin-top: 50px;
     padding: 20px;
-    width: 350px;
+    width: 375px;
 }
 
 #player-type {
@@ -677,9 +737,9 @@
     border: 3.5px #705dd0;
     border-radius: 4px;
     box-shadow: 2px 3px 5px 7px #ab2a7a;
-    margin-top: 50px;
+    margin-top: 20px;
     max-width: 600px;
-    padding: 7px;
+    padding: 5px;
 }
 
 /* Grid Row */
@@ -697,9 +757,9 @@
     border-radius: 5px;
     display: flex;
     justify-content: center;
-    height: 75px;
+    height: 60px;
     margin: 5px;
-    width:  75px;
+    width:  60px;
 }
 
 /* Buttons */
@@ -762,6 +822,24 @@
 }
 }
 
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .vice-city #player, .vice-city #grid {
+        width: 300px; /* Adjusted for smaller screens */
+    }
+
+    .vice-city .column {
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .vice-city .button-player-1, .vice-city .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+}
+
 .star-wars {
     
     /* Game Title */
@@ -813,7 +891,7 @@
         border-radius: 10px;
         margin-top: 50px;
         padding: 20px;
-        width: 350px;
+        width: 375px;
     }
     
     #player-type {
@@ -831,9 +909,9 @@
         border: 3.5px #ffe724;
         border-radius: 4px;
         box-shadow: 2px 3px 5px 7px #EEEEEE;
-        margin-top: 50px;
+        margin-top: 20px;
         max-width: 600px;
-        padding: 7px;
+        padding: 5px;
     }
     
     /* Grid Row */
@@ -851,9 +929,9 @@
         border-radius: 5px;
         display: flex;
         justify-content: center;
-        height: 75px;
+        height: 60px;
         margin: 5px;
-        width:  75px;
+        width:  60px;
     }
     
     /* Buttons */
@@ -915,6 +993,24 @@
         width: 50px;
     }
     }
+
+    /* Media query for mobile devices */
+@media (max-width: 480px) {
+    .star-wars #player, .star-wars #grid {
+        width: 300px; /* Adjusted for smaller screens */
+    }
+
+    .star-wars .column {
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .star-wars .button-player-1, .star-wars .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+}
     
     .barbie {
         
@@ -967,7 +1063,7 @@
             border-radius: 10px;
             margin-top: 50px;
             padding: 20px;
-            width: 350px;
+            width: 375px;
         }
         
         #player-type {
@@ -985,9 +1081,9 @@
             border: 3.5px #edf03f;
             border-radius: 4px;
             box-shadow: 2px 3px 5px 7px #edf03f;
-            margin-top: 50px;
+            margin-top: 20px;
             max-width: 600px;
-            padding: 7px;
+            padding: 5px;
         }
         
         /* Grid Row */
@@ -1005,9 +1101,9 @@
             border-radius: 5px;
             display: flex;
             justify-content: center;
-            height: 75px;
+            height: 60px;
             margin: 5px;
-            width:  75px;
+            width:  60px;
         }
         
         /* Buttons */
@@ -1069,10 +1165,28 @@
             width: 50px;
         }
         }
+
+        /* Media query for mobile devices */
+@media (max-width: 480px) {
+    .barbie #player, .barbie #grid {
+        width: 300px; /* Adjusted for smaller screens */
+    }
+
+    .barbie .column {
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .barbie .button-player-1, .barbie .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+}
         
-        .ferrari {
+.ferrari {
             
-            /* Game Title */
+/* Game Title */
             
             #game-title {
                 color: #000000;
@@ -1121,7 +1235,7 @@
                 border-radius: 10px;
                 margin-top: 50px;
                 padding: 20px;
-                width: 350px;
+                width: 375px;
             }
             
             #player-type {
@@ -1139,9 +1253,9 @@
                 border: 3.5px #EF1A2D;
                 border-radius: 4px;
                 box-shadow: 2px 3px 5px 7px #00A551;
-                margin-top: 50px;
+                margin-top: 20px;
                 max-width: 600px;
-                padding: 7px;
+                padding: 5px;
             }
             
             /* Grid Row */
@@ -1159,9 +1273,9 @@
                 border-radius: 5px;
                 display: flex;
                 justify-content: center;
-                height: 75px;
+                height: 60px;
                 margin: 5px;
-                width:  75px;
+                width:  60px;
             }
             
             /* Buttons */
@@ -1224,6 +1338,24 @@
             }
             }
 
+            /* Media query for mobile devices */
+@media (max-width: 480px) {
+    .ferrari #player, .ferrari #grid {
+        width: 300px; /* Adjusted for smaller screens */
+    }
+
+    .ferrari .column {
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .ferrari .button-player-1, .ferrari .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+}
+
             .mercedes {
                 
                 /* Game Title */
@@ -1275,7 +1407,7 @@
                     border-radius: 10px;
                     margin-top: 50px;
                     padding: 20px;
-                    width: 350px;
+                    width: 375px;
                 }
                 
                 #player-type {
@@ -1293,9 +1425,9 @@
                     border: 3.5px #565F64;
                     border-radius: 4px;
                     box-shadow: 2px 3px 5px 7px #ffffff;
-                    margin-top: 50px;
+                    margin-top: 20px;
                     max-width: 600px;
-                    padding: 7px;
+                    padding: 5px;
                 }
                 
                 /* Grid Row */
@@ -1313,9 +1445,9 @@
                     border-radius: 5px;
                     display: flex;
                     justify-content: center;
-                    height: 75px;
+                    height: 60px;
                     margin: 5px;
-                    width:  75px;
+                    width:  60px;
                 }
                 
                 /* Buttons */
@@ -1378,6 +1510,24 @@
                 }
                 }
 
+                /* Media query for mobile devices */
+@media (max-width: 480px) {
+    .mercedes #player, .mercedes #grid {
+        width: 300px; /* Adjusted for smaller screens */
+    }
+
+    .mercedes .column {
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .mercedes .button-player-1, .mercedes .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+}
+
                 .red-bull {
                     
                     /* Game Title */
@@ -1429,7 +1579,7 @@
                         border-radius: 10px;
                         margin-top: 50px;
                         padding: 20px;
-                        width: 350px;
+                        width: 375px;
                     }
                     
                     #player-type {
@@ -1447,9 +1597,9 @@
                         border: 3.5px #E30118;
                         border-radius: 4px;
                         box-shadow: 2px 3px 5px 7px #C0BFBF;
-                        margin-top: 50px;
+                        margin-top: 20px;
                         max-width: 600px;
-                        padding: 7px;
+                        padding: 5px;
                     }
                     
                     /* Grid Row */
@@ -1467,9 +1617,9 @@
                         border-radius: 5px;
                         display: flex;
                         justify-content: center;
-                        height: 75px;
+                        height: 60px;
                         margin: 5px;
-                        width:  75px;
+                        width:  60px;
                     }
                     
                     /* Buttons */
@@ -1532,6 +1682,24 @@
                     }
                     }
 
+                    /* Media query for mobile devices */
+@media (max-width: 480px) {
+    .red-bull #player, .red-bull #grid {
+        width: 300px; /* Adjusted for smaller screens */
+    }
+
+    .red-bull .column {
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .red-bull .button-player-1, .red-bull .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+}
+
                     .mocha {
                         
                         /* Game Title */
@@ -1583,7 +1751,7 @@
                             border-radius: 10px;
                             margin-top: 50px;
                             padding: 20px;
-                            width: 350px;
+                            width: 375px;
                         }
                         
                         #player-type {
@@ -1601,9 +1769,9 @@
                             border: 3.5px #786d68;
                             border-radius: 4px;
                             box-shadow: 2px 3px 5px 7px #f9e7de;
-                            margin-top: 50px;
+                            margin-top: 20px;
                             max-width: 600px;
-                            padding: 7px;
+                            padding: 5px;
                         }
                         
                         /* Grid Row */
@@ -1621,9 +1789,9 @@
                             border-radius: 5px;
                             display: flex;
                             justify-content: center;
-                            height: 75px;
+                            height: 60px;
                             margin: 5px;
-                            width:  75px;
+                            width:  60px;
                         }
                         
                         /* Buttons */
@@ -1685,6 +1853,24 @@
                             width: 50px;
                         }
                         }
+
+                        /* Media query for mobile devices */
+@media (max-width: 480px) {
+    .mocha #player, .mocha #grid {
+        width: 300px; /* Adjusted for smaller screens */
+    }
+
+    .mocha .column {
+        height: 30px; /* Adjusted for mobile screens */
+        width: 30px;  /* Adjusted for mobile screens */
+    }
+
+    .mocha .button-player-1, .mocha .button-player-2 {
+        height: 25px;
+        width: 25px;
+        border-radius: 50%;
+    }
+}
                         
                         
                         
