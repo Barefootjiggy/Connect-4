@@ -1,7 +1,5 @@
 .classic {
-       
     /* Game Title */
-    
     #game-title {
         color: #ffffff;
         font-family: "Londrina Solid", sans-serif;
@@ -9,9 +7,8 @@
         text-align: center;
         text-transform: uppercase;
     }
-       
-    /* Main Container */
     
+    /* Main Container */
     #main-container {
         align-items: center;
         display: flex;
@@ -20,7 +17,7 @@
         min-height: 100vh;
     }
     
-    /* Add these styles to style the announcement */
+    /* Announcement Styles */
     #game-conclusion {
         position: fixed;
         top: 50%;
@@ -39,9 +36,7 @@
         display: none;
     }
     
-    
     /* Player Details */
-    
     #player {
         background-color: #0271b8;
         border: 4px solid #ffffff;
@@ -49,7 +44,7 @@
         border-radius: 10px;
         margin-top: 50px;
         padding: 20px;
-        width: 350px;
+        width: 375px;
     }
     
     #player-type {
@@ -60,45 +55,38 @@
         text-transform: uppercase;
     }
     
-    /* Grid */
-    
+    /* Grid Styles */
     #grid {
         background-color: #fbde0c;
-        border: 3.5px #fbde0c;
+        border: 3.5px solid #fbde0c;
         border-radius: 4px;
         box-shadow: 2px 3px 5px 7px #0271b8;
-        margin-top: 50px;
+        margin-top: 20px;
         max-width: 600px;
-        padding: 7px;
+        padding: 5px;
     }
-    
-    /* Grid Row */
     
     .row {
         display: flex;
     }
     
-    /* Grid Column */
-    
     .column {
         align-items: center;
         background-color: #fbde0c;
-        border: 1px solid  #ce970c;
+        border: 1px solid #ce970c;
         border-radius: 5px;
         display: flex;
         justify-content: center;
-        height: 75px;
+        height: 60px;
         margin: 5px;
-        width:  75px;
+        width: 60px;
     }
     
-    /* Buttons */
-    
+    /* Button Styles */
     .button {
         background-color: #ffffff;
         border: none;
         height: 100%;
-        padding: 0;
         width: 100%;
     }
     
@@ -129,28 +117,36 @@
         transition: 1.5s;
     }
     
-    /* Player - 1 Buttons */
-    
     .button-player-1 {
         background-color: #000000;
         border: 2px solid #1c1d1e;
         border-radius: 50%;
-        color: #000000;
-        height:  50px;
+        height: 50px;
         width: 50px;
     }
-    
-    /* Player - 2 Buttons */
     
     .button-player-2 {
         background-color: #fa4846;
         border: 2px solid #fa4846;
         border-radius: 50%;
-        color: #EEEEEE;
-        height:  50px;
+        height: 50px;
         width: 50px;
     }
 }
+
+/* Media query for mobile devices */
+@media (max-width: 480px) {
+    .classic #player, .classic #grid {
+        width: 325px; /* Adjusted for smaller screens */
+    }
+
+    .classic .column {
+        height: 50px; /* Adjusted for mobile screens */
+        width: 50px;  /* Adjusted for mobile screens */
+    }
+}
+
+
 
 .after-hours {
        
